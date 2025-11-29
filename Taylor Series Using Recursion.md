@@ -19,22 +19,17 @@ To write a Python program to evaluate a **Taylor Series** using **recursion**, w
 def series(x, n):
     if n == 0:
         return 1
-    # Recursive case (using your formula)
-    return (x**n / n) + series(x, n - 1)
+    else:
+        return (x**n) / n + series(x, n-1)
 
-x = float(input("Enter the value of x: "))
-n = int(input("Enter the value of n (number of terms): "))
-
-result = series(x, n)
-
-print(f"Result of Taylor series for x={x} and n={n} is: {result}")
-
+x = int(input())
+n = int(input())
+print(series(x, n))
 ```
+
+
 ## OUTPUT
-```
-Enter the value of x: 2
-Enter the value of n (number of terms): 4
-Result of Taylor series for x=2.0 and n=4 is: 8.083333333333334
-```
+![image](https://github.com/user-attachments/assets/0a0a4288-d4a4-46fe-8045-19ed76038032)
+
 ## RESULT
-Hence evaluated a **Taylor Series** using **recursion**, where values of `x` and `n` are taken from the user.
+Thus, the program is verified successfully.
