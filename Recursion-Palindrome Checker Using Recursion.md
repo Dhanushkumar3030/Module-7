@@ -22,23 +22,23 @@ To write a Python program to check whether a given string is a **palindrome** us
 ## 💻 PROGRAM:
 ```
 def is_palindrome(word):
-    if len(word) < 1:
+    if len(word) < 1: 
         return True
-    if word[0] == word[-1]:
+    if word[0] == word[-1]: 
         return is_palindrome(word[1:-1])
     else:
         return False
-input_str = input("Enter a string: ").strip()
-if is_palindrome(input_str):
-    print(f'"{input_str}" is a palindrome.')
-else:
-    print(f'"{input_str}" is not a palindrome.')
 
+word = input()
+
+if is_palindrome(word):
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
 ```
+
 ## OUTPUT
-```
-Enter a string: racecar
-"racecar" is a palindrome.
-```
+![image](https://github.com/user-attachments/assets/4d21425a-386e-4a44-8363-d9c710b872a5)
+
 ## RESULT
-Hence checked whether a given string is a **palindrome** using **recursion**.
+Thus, the program is verified successfully.
